@@ -35,9 +35,6 @@
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
             padding: 2rem;
         }
-        .text-center {
-            text-center;
-        }
         h1 {
             font-size: 2.25rem;
             font-weight: bold;
@@ -316,8 +313,8 @@
                 <div class="header-text">
                     <h1 class="main-title">WiFi Smart Tools Privacy Policy</h1>
                     <h2 class="sub-title">Privacy Policy for WiFi Smart Tools Android App</h2>
-                    <p class="date-text">Last updated: July 14, 2026</p>
-                    <p class="date-text">Effective Date: July 14, 2026</p>
+                    <p class="date-text">Last updated: January 14, 2025</p>
+                    <p class="date-text">Effective Date: January 14, 2025</p>
                 </div>
 
                 <div class="content-section">
@@ -558,7 +555,7 @@
                         <h2>5. Google AdMob Advertising</h2>
                         <p>
                             WiFi Smart Tools uses <strong>Google AdMob</strong> to display advertisements and support 
-                            the free version of the app.
+                            the free version of the app. Ad configuration is managed through our API to ensure optimal ad delivery.
                         </p>
                         
                         <div class="info-card blue-card">
@@ -569,6 +566,20 @@
                                 <li>IP address (approximate location for regional ads)</li>
                                 <li>App usage data (interactions with ads)</li>
                             </ul>
+                        </div>
+
+                        <div class="info-card green-card">
+                            <h3>Ad Types Displayed:</h3>
+                            <ul>
+                                <li><strong>Banner Ads:</strong> Displayed on various screens throughout the app</li>
+                                <li><strong>Interstitial Ads:</strong> Full-screen ads shown between screen transitions</li>
+                                <li><strong>App Open Ads:</strong> Displayed when you return to the app from background</li>
+                            </ul>
+                            <p style="font-size: 0.875rem; color: #15803d; margin-top: 0.75rem;">
+                                ✓ Ad configuration is dynamically updated through our API<br>
+                                ✓ Ads are placed to minimize disruption to your experience<br>
+                                ✓ All ads comply with Google AdMob policies
+                            </p>
                         </div>
 
                         <div class="info-card green-card">
@@ -613,6 +624,11 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td><strong>App Configuration API</strong></td>
+                                        <td>Fetch app settings, ad configuration, and announcements</td>
+                                        <td>No personal data collected or stored</td>
+                                    </tr>
+                                    <tr>
                                         <td><strong>Speed Test Servers</strong></td>
                                         <td>Measure internet speed (public endpoints)</td>
                                         <td>No personal data transmitted</td>
@@ -620,6 +636,11 @@
                                 </tbody>
                             </table>
                         </div>
+                        <p class="note-text" style="margin-top: 1rem;">
+                            <strong>Note on API Usage:</strong> Our app connects to our API server at launch to fetch configuration data 
+                            (app version, ad settings, announcements). This connection does not transmit any personal information. 
+                            Only device metadata (OS version, app version) may be included in standard HTTP headers.
+                        </p>
                     </section>
 
                     <section style="margin-top: 2rem;">
