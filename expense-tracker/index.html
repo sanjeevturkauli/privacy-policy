@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Expense Tracker - Track expenses with complete privacy. All data stored locally on your device.">
+    <meta name="keywords" content="expense tracker privacy, financial app privacy, data protection">
+    <meta name="author" content="Sanjeev Kumar">
+    <title>Privacy Policy - Expense Tracker</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #7B61FF;
+            --primary-dark: #6349E6;
+            --secondary: #BB7AFF;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --info: #3b82f6;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .header .date {
+            margin-top: 1rem;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .app-info {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .app-info h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .info-item {
+            color: var(--text-light);
+        }
+        
+        .info-item strong {
+            color: var(--text);
+            display: block;
+        }
+        
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .section h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .section h3 {
+            color: var(--text);
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem 0;
+            font-weight: 600;
+        }
+        
+        .section p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .section ul {
+            margin: 0.75rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .section li {
+            color: var(--text-light);
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .section li strong {
+            color: var(--text);
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #d1fae5 0%, #dbeafe 100%);
+            border-left: 4px solid var(--success);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        .highlight p {
+            color: var(--text);
+            margin-bottom: 0;
+        }
+        
+        .alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid;
+            font-size: 0.9rem;
+        }
+        
+        .alert-warning {
+            background: #fef3c7;
+            border-color: var(--warning);
+            color: #92400e;
+        }
+        
+        .alert-info {
+            background: #dbeafe;
+            border-color: var(--info);
+            color: #1e40af;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .card {
+            background: var(--bg);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            transition: transform 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
+        }
+        
+        .card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .card p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+        
+        .contact {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .contact h3 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-item {
+            background: var(--card-bg);
+            padding: 1rem;
+            margin: 0.75rem 0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .contact-item .icon {
+            font-size: 1.5rem;
+        }
+        
+        .contact-item strong {
+            display: block;
+            color: var(--text);
+            font-size: 0.9rem;
+        }
+        
+        .contact-item a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: var(--text);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        .footer p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: var(--primary-dark);
+        }
+        
+        .header a:hover {
+            border-bottom-color: white !important;
+        }
+        
+        .footer a:hover {
+            background: rgba(255,255,255,0.2) !important;
+            border-bottom-color: white !important;
+        }
+        
+        .info-item a:hover {
+            color: var(--primary-dark);
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .section {
+                padding: 1rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Privacy Policy</h1>
+        <p>
+            <a href="https://play.google.com/store/apps/details?id=com.kartikgroupofindia.expensetracker" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               style="color: white; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 2px; transition: all 0.3s;">
+                Expense Tracker
+            </a>
+        </p>
+        <div class="date">Last Updated: August 17, 2026</div>
+    </div>
+    
+    <div class="container">
+        <!-- App Info -->
+        <div class="app-info">
+            <h3>📱 Application Information</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>App Name</strong>
+                    <a href="https://play.google.com/store/apps/details?id=com.kartikgroupofindia.expensetracker" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Expense Tracker
+                    </a>
+                </div>
+                <div class="info-item">
+                    <strong>Developer</strong>
+                    <a href="https://www.linkedin.com/in/sanjeevturkauli/" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Sanjeev Kumar
+                    </a>
+                </div>
+                <div class="info-item">
+                    <strong>Version</strong>
+                    1.1.0 (Build 6)
+                </div>
+                <div class="info-item">
+                    <strong>Package</strong>
+                    <a href="https://play.google.com/store/apps/details?id=com.kartikgroupofindia.expensetracker" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        com.kartikgroupofindia.expensetracker
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Introduction -->
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>This Privacy Policy explains how Expense Tracker collects, uses, and protects your information. By using our app, you agree to this policy.</p>
+            
+            <div class="highlight">
+                <p><strong>🔒 Privacy First:</strong> Your financial data stays on YOUR device. All transactions, expenses, and budgets are stored locally using Hive database. Sensitive authentication data (like PIN codes) is stored securely using Flutter Secure Storage. We do NOT upload your financial data to any servers.</p>
+            </div>
+        </div>
+        
+        <!-- Data Collection -->
+        <div class="section">
+            <h2>What Data We Collect</h2>
+            
+            <h3>Stored Locally on Your Device</h3>
+            <ul>
+                <li><strong>Financial Data:</strong> Transactions, expenses, income, budgets, categories</li>
+                <li><strong>Security:</strong> PIN codes (stored securely using Flutter Secure Storage), biometric authentication preferences</li>
+                <li><strong>Settings:</strong> Theme, language, currency, notification preferences</li>
+            </ul>
+            
+            <h3>Analytics & Services</h3>
+            <ul>
+                <li><strong>Firebase Analytics:</strong> App usage patterns, screen views, feature usage, crash reports. Firebase Analytics may process technical, device, app-instance, usage, and diagnostic information as necessary to provide analytics services. (NO financial data)</li>
+                <li><strong>AdMob:</strong> Advertising ID, device info, ad interactions for displaying ads</li>
+                <li><strong>FCM:</strong> Push notification delivery using Firebase Cloud Messaging and the "all_users" topic. We do not maintain a database of individual FCM registration tokens.</li>
+            </ul>
+            
+            <div class="alert alert-info">
+                <strong>Important:</strong> We do not send your transaction amounts, expense details, income, or budget information to Firebase, AdMob, or any external services.
+            </div>
+        </div>
+        
+        <!-- Data Storage -->
+        <div class="section">
+            <h2>Data Storage & Security</h2>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">🔐</div>
+                    <h4>Local Storage</h4>
+                    <p>Hive database for local data storage</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📱</div>
+                    <h4>Secure Keystore</h4>
+                    <p>Flutter Secure Storage for sensitive authentication data</p>
+                </div>
+                <div class="card">
+                    <div class="icon">👆</div>
+                    <h4>Biometric Auth</h4>
+                    <p>Uses Android's native biometric APIs</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🚫</div>
+                    <h4>No Cloud Sync</h4>
+                    <p>Financial data never uploaded</p>
+                </div>
+            </div>
+            
+            <div class="alert alert-warning">
+                <strong>Security Tip:</strong> Use device screen lock and enable app PIN/biometric lock for maximum security.
+            </div>
+        </div>
+        
+        <!-- How We Use Data -->
+        <div class="section">
+            <h2>How We Use Your Information</h2>
+            <ul>
+                <li><strong>App Features:</strong> Transaction tracking, budgets, charts, calendar view</li>
+                <li><strong>Security:</strong> PIN/biometric authentication</li>
+                <li><strong>Analytics:</strong> Understand app usage to improve features</li>
+                <li><strong>Ads:</strong> Display advertisements to support free access</li>
+                <li><strong>Notifications:</strong> Budget alerts, app updates (via FCM topics)</li>
+            </ul>
+        </div>
+        
+        <!-- Third-Party Services -->
+        <div class="section">
+            <h2>Third-Party Services</h2>
+            
+            <h3>Google AdMob</h3>
+            <p>Displays ads to support free access. AdMob may process advertising identifiers, IP address, device info, and ad interactions. AdMob does NOT access your financial data.</p>
+            <p><strong>Opt-out:</strong> Settings → Google → Ads → Opt out of personalization</p>
+            
+            <h3>Firebase Analytics</h3>
+            <p>Tracks app usage patterns, performance, and crashes. We do NOT send your transaction amounts, expense details, or financial data to Analytics.</p>
+            
+            <h3>Firebase Remote Config</h3>
+            <p>Controls app features and ad settings remotely. Does NOT receive your financial data.</p>
+            
+            <h3>Firebase Cloud Messaging (FCM)</h3>
+            <p>Sends push notifications for app updates and tips. Uses topic-based messaging ("all_users"). We do NOT store individual FCM tokens or send personalized financial notifications.</p>
+        </div>
+        
+        <!-- Your Rights -->
+        <div class="section">
+            <h2>Your Rights</h2>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">👁️</div>
+                    <h4>Access</h4>
+                    <p>View all your data anytime</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📤</div>
+                    <h4>Export</h4>
+                    <p>Export data as CSV</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🗑️</div>
+                    <h4>Delete</h4>
+                    <p>Delete transactions or all data</p>
+                </div>
+                <div class="card">
+                    <div class="icon">✏️</div>
+                    <h4>Control</h4>
+                    <p>Full control over your data</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Permissions -->
+        <div class="section">
+            <h2>App Permissions</h2>
+            <ul>
+                <li><strong>INTERNET:</strong> Display ads (financial data never transmitted)</li>
+                <li><strong>POST_NOTIFICATIONS:</strong> Budget alerts and reminders (optional)</li>
+                <li><strong>USE_BIOMETRIC:</strong> Fingerprint/face unlock (uses Android APIs, no biometric data stored)</li>
+                <li><strong>READ/WRITE_EXTERNAL_STORAGE:</strong> Only when you import/export CSV files</li>
+            </ul>
+        </div>
+        
+        <!-- Data Retention -->
+        <div class="section">
+            <h2>Data Retention</h2>
+            <p><strong>Local Data:</strong> Retained on your device until you delete it. Removed when app is uninstalled.</p>
+            <p><strong>Analytics:</strong> Firebase retains usage data per their retention policies (typically 14 months).</p>
+            <p><strong>Ads:</strong> AdMob data retained per Google's policies.</p>
+        </div>
+        
+        <!-- Children -->
+        <div class="section">
+            <h2>Children's Privacy</h2>
+            <p>Our app is not intended for children under 13. We do not knowingly collect information from children.</p>
+        </div>
+        
+        <!-- Changes -->
+        <div class="section">
+            <h2>Policy Changes</h2>
+            <p>We may update this policy. Changes will be posted here with updated date. Continued use means you accept the changes.</p>
+        </div>
+        
+        <!-- Contact -->
+        <div class="contact">
+            <h3>Contact Us</h3>
+            
+            <div class="contact-item">
+                <div class="icon">📧</div>
+                <div>
+                    <strong>Email</strong>
+                    <a href="mailto:support@kartikgroupofindia.com">support@kartikgroupofindia.com</a>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="icon">🌐</div>
+                <div>
+                    <strong>Website</strong>
+                    <a href="https://toolsathi.in" target="_blank">toolsathi.in</a>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="icon">⏱️</div>
+                <div>
+                    <strong>Response Time</strong>
+                    Within 72 hours
+                </div>
+            </div>
+        </div>
+        
+        <!-- Commitment -->
+        <div class="section" style="text-align: center; background: linear-gradient(135deg, #d1fae5 0%, #dbeafe 100%);">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
+            <h2>Our Privacy Commitment</h2>
+            <p style="font-size: 1rem; max-width: 600px; margin: 1rem auto;">
+                <strong>Expense Tracker is built with privacy as a core principle.</strong> All your financial records stay on your device. We do not operate servers for storing your financial data. You remain in complete control.
+            </p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>
+            <strong>
+                <a href="https://play.google.com/store/apps/details?id=com.kartikgroupofindia.expensetracker" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   style="color: white; text-decoration: none;">
+                    © 2026 Expense Tracker
+                </a>
+            </strong>
+        </p>
+        <p style="font-size: 0.95rem; opacity: 0.9; margin-top: 0.5rem;">
+            Developed by <strong>
+                <a href="https://www.linkedin.com/in/sanjeevturkauli/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   style="color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3);">
+                    Sanjeev Kumar
+                </a>
+            </strong>
+        </p>
+        <p style="font-size: 0.85rem; opacity: 0.7;">
+            Owned by Kartik Group of India
+        </p>
+    </div>
+</body>
+</html>
